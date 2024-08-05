@@ -15,8 +15,13 @@ body {
     justify-content: space-between;
 }
 
-.header-container {
-    margin: 16px 24px;
+header {
+    margin-bottom: 28px;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    z-index: 1000;
+    padding: 8px 24px;
 }
 
 .menu img {
@@ -68,3 +73,78 @@ input {
     cursor: pointer;
 }
 
+.main-section {
+    margin: 28px 25px 16px 75px;
+}
+
+iframe {
+    border-radius: 25px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 23.44px;
+    text-align: left;
+    margin: 16px 0;
+}
+
+.interaction {
+    max-width: 902px;
+    max-height: 42px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 0.87rem;
+    font-weight: 600;
+    line-height: 16.41px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 42px 5px 12px;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 0.87rem;
+    font-weight: 600;
+    line-height: 16.41px;
+}
+
+span, p {
+    font-weight: 400;
+    color: #515151;
+}
+
+p {
+    font-size: 0.87rem;
+    max-width: 510px;
+    margin-top: 16px;
+}
+
+.subscribe-button {
+    background-color: #f1f1f1;
+    color: #0f0f0f;
+    border: none;
+    font-size: 0.87rem;
+    font-weight: 600;
+    border-radius: 25px;
+    width: 159px;
+    height: 40px;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+.social-actions button {
+    background-color: transparent;
+    font-size: 0.87rem ;
+    border: none;
+    height: 40px;
+}
+
+.action {
+    margin-right: 42px;
+}
