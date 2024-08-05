@@ -1,0 +1,70 @@
+@import url(../CSS/reset.css);
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    margin: 16px 24px;
+}
+
+.menu img {
+    margin-right: 32px;
+}
+
+.header-search {
+    width: 405px;
+    padding: 10px;
+    height: 40px;
+    background-color: #242424;
+    border-radius: 25px;
+}
+
+.header-search img {
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input {
+    width: 238px;
+    background: transparent;
+    border: none;
+    padding: 0 12px 0 12px;
+    color: #ffffff;
+    outline: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header-login img {
+    border-radius: 20px;
+    margin-left: 24px;
+}
+
+.icon-small {
+    height: 24px;
+    cursor: pointer;
+}
+
+.image-login {
+    height: 34px;
+    cursor: pointer;
+}
+
+.logo-icon {
+    height: 20px;
+    cursor: pointer;
+}
+
