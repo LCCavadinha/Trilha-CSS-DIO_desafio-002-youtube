@@ -1,12 +1,19 @@
 @import url(../CSS/reset.css);
+@import url(../CSS/var.css);
 
 body {
-    background-color: #000000;
+    background-color: var(--color-background);
 }
 
-.container {
+.header-container {
     max-width: 1440px;
     margin: auto;
+}
+
+.main-container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
 }
 
 .flex {
@@ -19,7 +26,7 @@ header {
     margin-bottom: 28px;
     position: sticky;
     top: 0;
-    background-color: #000000;
+    background-color: var(--color-background);
     z-index: 1000;
     padding: 8px 24px;
 }
@@ -32,7 +39,7 @@ header {
     width: 405px;
     padding: 10px;
     height: 40px;
-    background-color: #242424;
+    background-color: var(--bg-color-input);
     border-radius: 25px;
 }
 
@@ -47,7 +54,7 @@ input {
     background: transparent;
     border: none;
     padding: 0 12px 0 12px;
-    color: #ffffff;
+    color: var(--color-text);
     outline: none;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -77,6 +84,7 @@ input {
 }
 
 .main-section {
+    max-width: 952px;
     margin: 28px 25px 0 75px;
     display: flex;
     flex-direction: column;
@@ -109,15 +117,23 @@ h3 {
 }
 
 h4 {
-    color: #ffffff;
+    color: var(--color-text);
     font-size: 0.87rem;
     font-weight: 600;
     line-height: 16.41px;
 }
 
+h5 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: var(--color-secondary-text);
+}
+
 span, p {
     font-weight: 400;
-    color: #515151;
+    color: var(--color-secondary-text);
 }
 
 p {
@@ -126,8 +142,8 @@ p {
 }
 
 .subscribe-button {
-    background-color: #f1f1f1;
-    color: #0f0f0f;
+    background-color: var(--color-highlight);
+    color: var(--color-background);
     border: none;
     font-size: 0.87rem;
     font-weight: 600;
@@ -155,4 +171,32 @@ button img {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+}
+
+.sidebar {
+    margin-top: 28px;
+}
+
+.suggestions-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.suggestions-container img {
+    border-radius: 10px;
+}
+
+.suggestions {
+    max-width: 196px;
+    max-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 8px;
+}
+
+.suggestions h3 {
+    margin: 0;
 }
